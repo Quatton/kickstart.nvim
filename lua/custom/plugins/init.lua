@@ -5,8 +5,6 @@
 --
 --
 
-require 'custom.plugins.auto-session'
-
 return {
   {
     'mrcjkb/rustaceanvim',
