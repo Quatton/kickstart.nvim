@@ -14,6 +14,9 @@ return {
     { '\\', ':Neotree reveal<CR>', desc = 'NeoTree reveal', silent = true },
   },
   opts = {
+    mappings = {
+      ['\\'] = 'close_window',
+    },
     filesystem = {
       window = {
         mappings = {
@@ -21,6 +24,7 @@ return {
         },
       },
     },
+    auto_clean_after_session_restore = false,
   },
   config = function()
     vim.api.nvim_create_autocmd({ 'BufEnter' }, {
