@@ -1,4 +1,4 @@
-vim.lsp.config('rust_analyzer', {
+return {
   settings = {
     ['rust-analyzer'] = {
       checkOnSave = {
@@ -6,4 +6,4 @@ vim.lsp.config('rust_analyzer', {
       },
     },
   },
-})
+}
