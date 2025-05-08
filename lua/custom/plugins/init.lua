@@ -3,6 +3,10 @@
 --
 -- See the kickstart.nvim README for more information
 --
+--
+
+require 'custom.plugins.auto-session'
+
 return {
   {
     'mrcjkb/rustaceanvim',
@@ -48,7 +52,13 @@ return {
     },
     build = 'make tiktoken', -- Only on MacOS or Linux
     opts = {
-      -- See Configuration section for options
+      mappings = {
+        reset = {
+          -- More sensible because "[R]eset"
+          normal = '<D-r>',
+          insert = '<D-r>',
+        },
+      },
     },
     -- See Commands section for default commands if you want to lazy load on them
   },
